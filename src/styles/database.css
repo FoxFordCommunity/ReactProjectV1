@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+html.light {
+    --bgBody: #C7F8FF;
+    --textLogo: rgb(0, 0, 0);
+    --linkHeader: rgb(0, 0, 0);
+    --linkHoverHeader: #55adff;
+    --iconProfile: black;
+    --buttonTextHeader: #ffffff;
+    --bgButtonHeader: #1BBAFF;
+    --bgButtonHoverHeader: #0091BF;
+    --linkBurger: rgb(0, 0, 0);
+    --radioTextHeader: rgb(0, 0, 0);
+    --radioBgHeader: #0099ff;
+    --radioBorderHeader: black;
+    --footerText: rgb(255, 254, 254);
+    --bgFooter: rgb(43, 43, 43);
+    --block__working-unit: #239ec4;
+    --block__user-editor: rgb(194, 194, 194);
+
+}
+
+html.dark {
+    --bgBody: #222222;
+    --textLogo: rgb(255, 255, 255);
+    --linkHeader: rgb(255, 255, 255);
+    --linkHoverHeader: #55adff;
+    --iconProfile: white;
+    --buttonTextHeader: #ffffff;
+    --bgButtonHeader: #1BBAFF;
+    --bgButtonHoverHeader: #0091BF;
+    --linkBurger: rgb(255, 255, 255);
+    --radioTextHeader: #fff;
+    --radioBgHeader: #0091BF;
+    --radioBorderHeader:#fff;
+    --footerText: rgb(255, 255, 255);
+    --bgFooter: rgb(66, 66, 66);
+    --block__working-unit: #005f7c;
+    --block__user-editor: rgb(26, 26, 26);
+}
+
+
+/*-----------------------------------*/
+/* MAIN */
+/*-----------------------------------*/
+.main {
+    margin-top: 100px;
+}
+
+.block__working-unit {
+    display: block;
+    background-color: var(--block__working-unit);
+    min-height: 1000px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+.block__user-editor {
+    display: inline-block;
+    height: 50px;
+    width: 96%;
+    background-color: var(--block__user-editor);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.btns {
+    margin-top: 6px;
+    margin-left: 1050px;
+}
+
+.TitleDB{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: white;
+}
+
+
+.editor-user {
+    display: inline;
+    padding: 6px 12px;
+    background-color: rgb(80, 187, 214);
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.delete-user {
+    display: inline;
+    padding: 6px 12px;
+    background-color: #ff4b34;
+    border-radius: 5px;
+}
+
+.btn-save {
+    margin: 120px 0 30px 1050px;
+}
+
+.button-save {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    background-color: rgb(30, 182, 30);
+    padding: 17px 22px;
+    border-radius: 10px;
+}
+
+.buttondelete{
+    background-color: blue;
+}
+
+.buttonedit{
+    background-color: red;
+}
+@media(max-width: 1330px) {
+
+}
+
+@media(max-width: 991.98px) {
+
+}
+
+@media(max-width: 767.98px) {
+
+}

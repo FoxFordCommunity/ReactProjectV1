@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+.light {
+    --bgBody: #C7F8FF;
+    --textLogo: rgb(0, 0, 0);
+    --linkHeader: rgb(0, 0, 0);
+    --linkHoverHeader: #55adff;
+    --iconProfile: black;
+    --buttonTextHeader: #ffffff;
+    --bgButtonHeader: #1BBAFF;
+    --bgButtonHoverHeader: #0091BF;
+    --linkBurger: rgb(0, 0, 0);
+    --radioTextHeader: rgb(0, 0, 0);
+    --radioBgHeader: #0099ff;
+    --radioBorderHeader: black;
+    --footerText: rgb(255, 254, 254);
+    --bgFooter: rgb(43, 43, 43);
+    --block__working-unit: #239ec4;
+    --block__user-editor: rgb(194, 194, 194);
+    --block-editor: #239ec4;
+    --title-editor: rgb(194, 194, 194);
+    --article-editor: rgb(194, 194, 194);
+    --article-editorHover:rgb(243, 243, 243) ;
+    --title-editorHover: rgb(243, 243, 243);
+    --textareacolor: #232323;
+}
+
+.dark {
+    --bgBody: #222222;
+    --textLogo: rgb(255, 255, 255);
+    --linkHeader: rgb(255, 255, 255);
+    --linkHoverHeader: #55adff;
+    --iconProfile: white;
+    --buttonTextHeader: #ffffff;
+    --bgButtonHeader: #1BBAFF;
+    --bgButtonHoverHeader: #0091BF;
+    --linkBurger: rgb(255, 255, 255);
+    --radioTextHeader: #fff;
+    --radioBgHeader: #0091BF;
+    --radioBorderHeader:#fff;
+    --footerText: rgb(255, 255, 255);
+    --bgFooter: rgb(66, 66, 66);
+    --block__working-unit: #005f7c;
+    --block__user-editor: rgb(26, 26, 26);
+    --block-editor: #005f7c;
+    --title-editor: rgb(31, 31, 31);
+    --article-editor: rgb(31, 31, 31);
+    --article-editorHover: #292929 ;
+    --title-editorHover: grey;
+    --textareacolor: #FFF;
+
+}
+
+/*-----------------------*/
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+/*-----------------------*/
+
+[class*="__container"] {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+/* Для ПК*/
+@media (max-width: 1330px) {
+    [class*="__container"] {
+        max-width: 970px;
+    }
+}
+
+/* Для планшета*/
+@media(max-width: 991.98px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+}
+
+/* Для телефона*/
+@media(max-width: 767.98px) {
+    [class*="__container"] {
+        max-width: none;
+    }
+}
+/*-----------------------------------*/
+/* HEADER */
+/*-----------------------------------*/
+
+body{
+    background-color: var(--bgBody);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*-----------------------------------*/
+/* MAIN */
+/*-----------------------------------*/
+.main {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.block-editor {
+    display: block;
+    width: 100%;
+    min-height: 704px;
+    background-color: var(--block-editor);
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+.title-editor {
+    display: inline-block;
+    border-radius: 5px;
+    height: 100px;
+    width: 100%;
+    background-color: var(--title-editor);
+    margin-top: 30px;
+    transition: background-color .2s linear ;
+    cursor: pointer;
+}
+
+.title-editor:hover {
+    background-color: var(--title-editorHover);
+}
+
+.article-editor {
+    display: inline-block;
+    border-radius: 5px;
+    min-height: 420px;
+    width: 100%;
+    background-color: var(--article-editor);
+    margin-top: 30px;
+    transition: background-color .2s linear ;
+    cursor: pointer;
+}
+
+.article-editor:hover {
+    background-color: var(--article-editorHover);
+}
+
+
+.btn-save {
+    display: flex;
+    padding-top: 20px;
+    justify-content: flex-end;
+}
+
+.button-save {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    background-color: rgb(30, 182, 30);
+    padding: 17px 22px;
+    border-radius: 10px;
+    transition: background-color .2s linear ;
+}
+
+.button-save:hover {
+    background-color: rgb(0, 100, 13);
+}
+
+@media(max-width: 1330px) {
+
+}
+
+@media(max-width: 991.98px) {
+
+}
+
+@media(max-width: 767.98px) {
+
+}
+
+.textarea__article_title{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    color: var(--textareacolor);
+    outline: none;
+    padding:10px 15px;
+}
+.textarea__article_desc{
+    width: 100%;
+    min-height: 420px;
+    resize: none;
+    color: var(--textareacolor);
+    outline: none;
+    padding:20px 15px;
+}
+.textarea__article_desc::placeholder{
+    text-align: center;
+}
+.textarea__article_title::placeholder{
+    text-align: center;
+}
